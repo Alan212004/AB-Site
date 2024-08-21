@@ -3,13 +3,10 @@
   background-color: #333;
   overflow: hidden;
   width: 100%;
-  z-index: 1;
-  position: sticky;
-  /* Stay on top */
-  top: 0;
-    /* Stay at the top */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
+ 
+  position: sticky;  /* Stay on top */
+  top: 0;  /* Stay at the top */
+  overflow-x: hidden;  /* Disable horizontal scroll */
   border-radius: 50px;
   transition: 0.4s;
 
@@ -37,16 +34,32 @@
   color: white;
 }
 
-.topnav-right {
+.dropdown {
   float: right;
-  background-color: #04AA6D;
-  color: white;
-  border-radius: 50px;
-  
+  overflow: hidden;
 }
 
 .topnav-left {
   float: left;
   border-radius: 50px;
- 
+
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header {
+  text-align: center;
+}
+
+.footer{
+  background-color: #333;
+}
+
+.main{
+  background-color: #69a58f;
+  top: 0;
+  width: 100%;
+  margin: 0%;
 }
