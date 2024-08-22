@@ -2,28 +2,48 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 /* Top Bar */
 .top-bar {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: dimgrey;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  justify-content: left;
+  align-items: left;
+  padding: 10px 10px;
   z-index: 1000;
   /* Ensure it's on top */
+}
+
+.top-bar img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+ 
+}
+
+.top-phone{
+  background-color: dimgrey;
+  padding-right: 25px;
 }
 
 .top-phone a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
+  
+}
+.text-show{
+  justify-content: end;
+  align-items: right;
+  right: 0;
 }
 
 .text-show marquee {
@@ -41,6 +61,7 @@ body {
 .header h1 {
   font-size: 3em;
   margin: 0;
+  font-weight: bolder;
 }
 
 .header p {
@@ -55,6 +76,8 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
+
+
 }
 
 .topnav a {
@@ -79,7 +102,16 @@ body {
 .dropdown {
   float: right;
   position: relative;
+
+ 
 }
+
+.dropdown i {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 
 .dropdown .dropbtn {
   color: #f2f2f2;
@@ -87,7 +119,9 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
-  background-color: #333;
+  background-color: #04AA6D;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .dropdown-content {
@@ -122,8 +156,9 @@ body {
   color: #fff;
   text-align: center;
   padding: 40px 20px;
-  position: fixed;
+  position: relative;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -144,6 +179,7 @@ body {
   width: 100px;
   height: 100px;
 }
+
 .footer-logo h1 {
   margin: 0;
   font-size: 2em;
@@ -232,16 +268,23 @@ body {
     align-items: center;
   }
 
-  .footer-logo, .footer-menu, .footer-contact, .footer-social {
+  .footer-logo,
+  .footer-menu,
+  .footer-contact,
+  .footer-social {
     margin-bottom: 20px;
   }
 }
 
 
-/* Main Body */
-.main-body {
-  background-color: #9dd1f0;
-  padding: 20px;
- 
-  text-align: center;
+
+
+
+
+.body img{
+  width: 400px;
+  height: 800px;
+  margin: 10px;
+  overflow: hidden;
 }
+
